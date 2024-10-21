@@ -32,7 +32,6 @@ appId: "1:716679557063:web:603a78f59045ceeaf133e2"
        const user = userCredential.user;
        console.log(user);
        alert("Registration successfully!!");
-       // ...
      })
      .catch((error) => {
        const errorCode = error.code;
@@ -42,7 +41,7 @@ appId: "1:716679557063:web:603a78f59045ceeaf133e2"
        alert(error);
      });		  		  
  });
- //----- End
+
 
  //----- Login code start	  
  document.getElementById("login").addEventListener("click", function() {
@@ -56,7 +55,7 @@ appId: "1:716679557063:web:603a78f59045ceeaf133e2"
        console.log(user);
        alert(user.email+" Login successfully!!!");
        document.getElementById('logout').style.display = 'block';
-       // ...
+
      })
      .catch((error) => {
        const errorCode = error.code;
@@ -65,7 +64,6 @@ appId: "1:716679557063:web:603a78f59045ceeaf133e2"
        alert(errorMessage);
      });		  		  
  });
- //----- End
 
  //----- Logout code start	  
  document.getElementById("logout").addEventListener("click", function() {
@@ -79,4 +77,4 @@ appId: "1:716679557063:web:603a78f59045ceeaf133e2"
          console.log('An error happened.');
        });		  		  
  });
- //----- End
+
